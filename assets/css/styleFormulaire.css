@@ -1,0 +1,117 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    height: 550px;
+}
+.container img{
+    width: 42%;
+}
+.form{
+    gap: 15px;
+    width: 58%;
+    padding: 15px 0px;
+    background-color: rgb(247,247,247);
+}
+.form .navbar-connexion-inscription,.form .elements{
+    width: 87%;
+    margin: 5px auto;
+}
+.elements{
+    gap: 30px;
+}
+.elements input[placeholder]{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0px 5px 5px 0px;
+    border: solid rgb(204,204,204) 1px;
+}
+.password{
+    position: relative;
+}
+.password .eyes{
+    position: absolute;
+    right: 13px;
+    color: rgb(85,85,85);
+    top: 11px;
+}
+.eyes .fa-eye-slash{
+    display: none;
+}
+.elements input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.elements .icon-visible{
+    border: solid rgb(204,204,204) 1px;
+    border-right: none;
+    padding: 15.5px 15px;
+    width: 45px;
+    align-self: center;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgb(238,238,238);
+    color: rgb(85,85,85);
+}
+.navbar-connexion-inscription a{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar-connexion-inscription .action-connexion{
+    background-color: #c4c4c4;
+    color: rgb(21,25,21);
+    background-color:  rgb(224,224,224);
+}
+.navbar-connexion-inscription .action-inscription{
+    background-color: rgb(30, 115, 190);
+    color: white;
+    font-weight: 700;
+}
+.cursor{
+    cursor: default;
+}
+.button-inscription{
+    border-radius: 20px;
+    text-align: center;
+    height: 45px;
+    padding: 5px;
+    background: linear-gradient(to right,rgb(127,183,242),rgb(31,107,207));
+}
+.button-inscription a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 344px) and (max-width:768px){
+    body{
+        display: block;
+        overflow-y: scroll;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        max-width: 90%;
+        margin: 30px auto;
+        height: auto;
+    }
+    .container img{
+        width: 100%;
+        height: 400px;
+        
+    }
+    .form{
+        width: 100%;
+    }
+}
